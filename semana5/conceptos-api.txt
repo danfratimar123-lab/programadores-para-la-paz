@@ -1,0 +1,6 @@
+¿Que hace la ruta? R/ Esta ruta recibe información (un mensaje) enviado por un usuario y responde confirmando que el reporte fue recibido
+¿Para qué podría servir en una aplicación comunitaria? R/ En una aplicación comunitaria, serviriría perfectamente para que los vecinos envíen reportes de problemas (como fallas de luz, daños o alertas de seguridad) hacia la base de datos central de la comunidad de forma segura
+ejemplo: 
+{
+  "mensaje": "Reporte de prueba enviado por la comunidad"
+}
