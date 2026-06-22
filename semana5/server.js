@@ -11,10 +11,17 @@ app.get('/saludo', (req, res) => {
   res.send('Hola comunidad');
 });
 
-// Mejora: Uso de template literals para mayor legibilidad
 app.get('/mensaje/:nombre', (req, res) => {
-  const { nombre } = req.params; // Buenas prácticas: Destructuración
-  res.send(`Hola ${nombre}`);
+  const nombre = req.params.nombre;
+  res.send('Hola ' + nombre);
+});
+
+app.post('/reporte', (req, res) => {
+  const mensaje = req.body.mensaje;
+  res.json({
+    estado: "Reporte recibido",
+    mensaje: mensaje
+  });
 });
 
 app.listen(3000, () => {
