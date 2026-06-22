@@ -1,0 +1,14 @@
+Análisis del flujo de datos en las pruebas de la API:
+
+Petición inicial de GET /reportes: Al arrancar el servidor, el arreglo global 'reportes' está vacío ([]), por lo que una petición GET inicial responde con un arreglo vacío.
+
+Inserción mediante POST /reportes: Al enviar un JSON estructurado con un 'tipo' y 'descripcion', el servidor calcula dinámicamente un ID basado en la longitud actual de la lista, construye el objeto y lo añade al arreglo en memoria usando el método '.push()'. El servidor retorna una confirmación con código 200 OK y el objeto indexado.
+
+Consulta posterior GET  /reportes: Al realizar la consulta GET después de la inserción, el servidor devuelve el arreglo actualizado conteniendo todos los reportes almacenados en la memoria RAM del proceso de Node.js
+[
+  {
+    "id": 1,
+    "tipo": "Infraestructura",
+    "descripcion": "Daño en alumbrado público"
+  }
+]
