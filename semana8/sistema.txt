@@ -1,0 +1,8 @@
+Análisis de Comandos del Sistema:
+
+1. Información de comandos:
+- 'uname -a': Muestra la información completa del sistema operativo y del núcleo (Kernel) de Linux, incluyendo el nombre del nodo, la versión del kernel, la arquitectura del procesador (ej. x86_64) y la fecha de compilación.
+- 'whoami': Devuelve el nombre exacto del usuario actual que tiene la sesión activa en la terminal.
+
+2. Utilidad en la administración de servidores:
+Conocer estos datos es fundamental para un administrador por motivos de compatibilidad y seguridad. Permite verificar si el sistema requiere parches de actualización críticos para el kernel, constatar qué arquitectura de software se debe descargar al instalar dependencias de Node.js o librerías del sistema, y auditar con qué privilegios y permisos de usuario se están ejecutando los procesos del servidor para evitar ejecuciones inseguras como usuario root.
