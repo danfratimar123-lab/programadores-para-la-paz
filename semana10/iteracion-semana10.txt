@@ -1,0 +1,13 @@
+1. ¿Qué 2 tareas del backlog harías primero?;Las dos primeras tareas (o historias de usuario) que desarrollaría son:
+·El reporte de incidencias con evidencia: "Como ciudadano quiero reportar una incidencia adjuntando evidencia en foto o video para visibilizar el problema..."
+·La validación y categorización de reportes: "Como veedor comunitario quiero validar y categorizar las incidencias recibidas para filtrar reportes..."
+2. ¿Por qué son las más importantes?; Mi razon: Es porque son las tareas fundamentales (el Core de la aplicación). 
+Sin la capacidad de que un ciudadano registre una incidencia con su evidencia, la plataforma no tiene datos con los cuales trabajar. Inmediatamente después, se necesita la capacidad de validar y filtrar esa información para asegurar que el sistema reciba contenido legítimo y estructurado, evitando spam o reportes duplicados desde el primer día.
+3. ¿Qué significa para ti que una tarea esté "terminada"?; Para mí significa:
+Que la historia de usuario ha cumplido con un estándar de calidad acordado y un flujo técnico completo, garantizando que ya aporta valor real al usuario final y no requiere más intervención del equipo de desarrollo en esa fase.
+
+Escribe una definición simple de terminado con al menos 3 criterios. Por ejemplo:
+
+Funciona.
+Fue probada.
+Quedó registrada en Git

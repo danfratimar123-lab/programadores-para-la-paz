@@ -1,0 +1,15 @@
+1. ¿Qué evento activa el flujo?; Respuesta: 
+Cuando un ciudadano registra exitosamente una nueva incidencia o reporte en el formulario de la aplicación web de la comunidad. (Este evento actúa como el Webhook o Trigger inicial en n8n).
+2. ¿Qué mensaje se enviaría a Telegram?; Respuesta: 
+Un mensaje claro, estructurado y sin datos de carácter privado. Por ejemplo:
+"¡Nuevo reporte de veeduría recibido! \n• Categoría: Daño en vía pública \n• Ubicación: Sector Comuna 4 \n• ID del reporte: #2046 \n\nPor favor, un veedor asignado debe ingresar al panel para validar y procesar este caso."
+3. ¿Qué información no debería enviarse por seguridad?; Respuesta: 
+No se debe enviar ningún dato personal identificable (PII) del ciudadano que realizó el reporte (como su nombre completo, número de cédula, número de teléfono, correo electrónico o dirección residencial exacta si pone en riesgo su privacidad). Tampoco deben viajar credenciales de acceso, contraseñas o tokens del sistema a través del canal de mensajería pública de Telegram
+
+·Ejemplo: 
+
+Evento: Un ciudadano registra una nueva incidencia en la plataforma de veeduría (ej. un bache en la vía).
+
+Mensaje a enviar a Telegram: "¡Nuevo reporte comunitario recibido! Tipo: Infraestructura. Sector: Barrio El Centro. ID del caso: #4102. Un veedor debe revisar y validar la información en el sistema."
+
+Información que no debería enviarse por seguridad: Datos personales del ciudadano que reporta (nombre completo, documento de identidad, direcciones, teléfono, correo electrónico) ni contraseñas o tokens de acceso a la base de datos.

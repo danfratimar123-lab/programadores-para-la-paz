@@ -1,0 +1,6 @@
+1. Como ciudadano quiero reportar una incidencia adjuntando evidencia en foto o video para visibilizar el problema ante la comunidad y las autoridades.
+2. Como veedor comunitario quiero validar y categorizar las incidencias recibidas para filtrar reportes duplicados o falsos antes de procesarlos.
+3. Como coordinador de veeduría quiero asignar los reportes verificados a las entidades gubernamentales responsables para exigir una solución formal.
+4. Como ciudadano afectado quiero recibir alertas sobre los cambios de estado en mi reporte para hacer un seguimiento transparente del caso.
+5. Como miembro del equipo quiero generar un reporte estadístico mensual de las incidencias resueltas para rendir cuentas públicamente a la comunidad.
+6. Como vecino quiero comentar y dar apoyo a los reportes de mi sector para priorizar de forma colectiva las necesidades más urgentes del barrio.
