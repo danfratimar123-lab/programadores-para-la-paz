@@ -1,0 +1,38 @@
+======================================================================
+DESCRIPCIÓN DE AUTOMATIZACIÓN - PETICIÓN EN 3 CLICS (n8n + Telegram)
+======================================================================
+
+1. EVENTO QUE ACTIVA LA AUTOMATIZACIÓN (TRIGGER)
+----------------------------------------------------------------------
+* Evento: Nueva causa registrada en la plataforma.
+* Detalle técnico: Un webhook en n8n escucha la base de datos de la 
+  aplicación. Cuando se inserta una nueva fila en la tabla "Causa", 
+  n8n recibe los datos de la causa (id, título y descripción) y 
+  activa el flujo de trabajo de forma inmediata.
+
+
+2. MENSAJE QUE SE ENVÍA
+----------------------------------------------------------------------
+Se envía una notificación automática a un canal público de Telegram 
+utilizando un Bot de Telegram integrado en n8n.
+
+* Formato del mensaje enviado:
+  "📢 ¡Nueva causa creada en la plataforma! 
+  
+  📌 Título: [Título de la causa]
+  📝 Descripción: [Breve resumen de la descripción...]
+  
+  Apoya esta iniciativa y haz que tu voz se escuche en: 
+  https://peticion3clics.com/causas/[id]"
+
+
+3. INFORMACIÓN QUE NO DEBE ENVIARSE POR SEGURIDAD
+----------------------------------------------------------------------
+Para proteger la privacidad de los usuarios y cumplir con las normas 
+de protección de datos personales (Habeas Data), NO se debe enviar:
+
+* Datos de identificación personal (números de cédula, pasaportes, etc.).
+* Datos de contacto directo de los creadores o firmantes (números telefónicos, 
+  correos electrónicos o direcciones físicas).
+* Credenciales de acceso, tokens del sistema o IDs internos del servidor.
+* Comentarios, opiniones de carácter sensible o información médica/financiera.

@@ -1,0 +1,33 @@
+======================================================================
+MODELO DE DATOS - PETICIÓN EN 3 CLICS
+======================================================================
+
+----------------------------------------------------------------------
+1. Entidad: Causa
+----------------------------------------------------------------------
+Representa cada una de las iniciativas, peticiones o problemáticas comunitarias que los ciudadanos publican en la plataforma para recolectar firmas o respaldos.
+
+Atributos:
+* id (INTEGER / SERIAL): Clave primaria única que identifica cada causa.
+* titulo (VARCHAR / STRING): Título descriptivo y corto de la causa.
+* descripcion (TEXT): Explicación detallada del problema y la solicitud de la petición.
+* fecha (TIMESTAMP / DATE): Fecha y hora exacta en la que se creó la causa.
+
+----------------------------------------------------------------------
+2. Entidad: Apoyo
+----------------------------------------------------------------------
+Representa el voto, firma o respaldo individual que un ciudadano otorga a una causa específica dentro de la plataforma.
+
+Atributos:
+* id (INTEGER / SERIAL): Clave primaria única que identifica este registro de apoyo.
+* causa_id (INTEGER): Clave foránea (Foreign Key) que vincula este apoyo directamente con el "id" de la tabla Causa.
+* nombre (VARCHAR / STRING): Nombre completo del ciudadano que apoya la causa.
+* fecha (TIMESTAMP / DATE): Fecha y hora en la que se registró el apoyo.
+
+----------------------------------------------------------------------
+Relación entre Entidades:
+----------------------------------------------------------------------
+Existe una relación de "Uno a Muchos" (1:N) entre Causa y Apoyo. 
+* Una Causa puede recibir muchos Apoyos.
+* Un Apoyo pertenece única y exclusivamente a una Causa específica (vinculado mediante el campo "causa_id").
+======================================================================

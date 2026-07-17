@@ -1,0 +1,19 @@
+Flujo del Sistema: Petición en 3 Clics
+
+1. Registro de la causa:
+   Un ciudadano ingresa a la plataforma, completa un formulario sencillo con los detalles de su problemática (título, descripción y categoría) y publica la causa.
+
+2. Almacenamiento en la base de datos:
+   El sistema recibe la información del formulario, asigna un identificador único a la causa y la guarda de forma segura en la base de datos para hacerla visible al público.
+
+3. Apoyo ciudadano (Interacción):
+   Otros usuarios navegan por la plataforma, encuentran la causa y deciden apoyarla haciendo clic en el botón de "Apoyar causa".
+
+4. Procesamiento y conteo de firmas (Backend):
+   El sistema valida el apoyo de cada usuario para evitar duplicados, incrementa el contador de firmas en la base de datos en tiempo real y actualiza el estado de la petición.
+
+5. Generación automatizada del documento:
+   Una vez que la causa alcanza la meta de apoyos establecida (o cuando el creador lo solicita), el sistema extrae la información de la base de datos y genera automáticamente un documento formal en formato PDF con la petición y el listado de respaldos.
+
+6. Descarga y radicación:
+   El creador de la causa recibe una notificación, descarga el documento PDF generado por el sistema y queda listo para radicarlo formalmente ante las entidades competentes.
